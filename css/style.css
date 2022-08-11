@@ -23,7 +23,7 @@ body {
 
 .main {
   width: 100%;
-  margin: 0px auto 100px auto;
+  margin: 0px auto 0px auto;
   background-color: #F2F1EF;
   box-sizing: border-box;
   overflow: hidden;
@@ -137,10 +137,14 @@ body {
 .brands__img {
   display: block;
   width: 100%;
+  transition: 0.3s;
 }
 .brands__link.opacity {
   opacity: 0;
   transform: translateY(-60px);
+}
+.brands__link:hover .brands__img {
+  transform: scale(1.2);
 }
 
 @media (max-width: 1000px) {
@@ -787,6 +791,8 @@ body {
   font-size: 12px;
   margin-top: 20px;
   transition: 0.3s;
+  margin: 0px auto;
+  width: 260px;
 }
 .brand__link:hover {
   background-color: white;

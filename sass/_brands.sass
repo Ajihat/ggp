@@ -29,9 +29,12 @@
     &__img
         display: block
         width: 100%
+        transition: .3s
     &__link.opacity
         opacity: 0
         transform: translateY(-60px)
+    &__link:hover &__img
+        transform: scale(1.2)
 
 @media (max-width: 1000px)
     .brands
