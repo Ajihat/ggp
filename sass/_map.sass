@@ -1,0 +1,154 @@
+.map
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 100px 0px 200px 0px
+    &__holder
+        position: relative
+        width: 700px
+        height: 721px
+    &__img
+        display: block
+        width: 100%
+    &__dot
+        position: absolute
+        top: 10%
+        left: 10%
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        background-color: black
+        z-index: 3
+        transition: .3s
+        cursor: pointer
+    &__dot:hover
+        transform: scale(1.2)
+        z-index: 4
+    &__dot:hover .label
+        display: flex
+    &__dot:nth-of-type(1)
+        top: 10%
+        left: 43%
+    &__dot:nth-of-type(2)
+        top: 18%
+        left: 5%
+    &__dot:nth-of-type(3)
+        top: 37%
+        left: 23%
+    &__dot:nth-of-type(4)
+        top: 45%
+        left: 67%
+    &__dot:nth-of-type(5)
+        top: 53%
+        left: 50%
+    &__dot:nth-of-type(6)
+        top: 61%
+        left: 24%
+    &__dot:nth-of-type(7)
+        top: 74%
+        left: 44%
+    &__dot:nth-of-type(8)
+        top: 84%
+        left: 59%
+    &__date
+        box-sizing: content-box
+        padding: 12px
+        position: absolute
+        width: 60px
+        left: 50%
+        top: -37px
+        transform: translateX(-50%)
+    &__date.map__date--down
+        top: initial
+        bottom: -37px
+    &__sticker
+        position: absolute
+        z-index: 3
+    &__sticker.smolasty
+        top: -200px
+        right: -100px
+        width: 380px
+    &__sticker.kaluch
+        bottom: -100px
+        right: -150px
+        width: 280px
+    &__sticker.kinga
+        bottom: 15px
+        left: -150px
+        width: 280px
+    &__events
+        display: none
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        padding: 0 20px
+    &__event
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        width: 50%
+        height: 120px
+        margin-bottom: 50px
+    &__event-date
+        height: 20px
+        margin-bottom: 10px
+    &__event-city
+        height: 20px
+        margin-bottom: 10px
+
+@media (max-width: 1200px)
+    .map
+        &__holder
+            width: 490px
+            height: 504px
+        &__sticker.smolasty
+            top: -200px
+            right: -150px
+            width: 380px
+        &__sticker.kaluch
+            bottom: -100px
+            right: -170px
+            width: 280px
+        &__sticker.kinga
+            bottom: -120px
+            left: -190px
+            width: 280px
+
+@media (max-width: 850px)
+    .map
+        margin-top: 250px
+
+@media (max-width: 650px)
+    .map
+        margin-top: 100px
+        margin-bottom: 100px
+        &__holder
+            width: 441px
+            height: 453px
+        &__sticker
+            display: none
+        &__date
+            width: 40px
+        &__dot
+            cursor: default
+        &__dot:hover
+            transform: scale(1)
+            z-index: 4
+        &__dot:hover .label
+            display: none
+@media (max-width: 650px)
+    .map
+        &__events
+            display: flex
+@media (max-width: 550px)
+    .map
+        &__holder
+            width: 352px
+            height: 362px
+
+@media (max-width: 360px)
+    .map
+        &__holder
+            width: 316px
+            height: 325px

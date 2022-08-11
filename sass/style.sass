@@ -9,20 +9,40 @@
     src: url('https://ccc-frontend.github.io/fonts/fonts/Linotype-UniversLTPro-65Bold.woff2')
     format: ('woff2')
 
+@font-face
+    font-family: 'MinionPro-Regular'
+    src: url('https://ccc-frontend.github.io/fonts/fonts/MinionPro-Regular.otf')
+    format: ('opentype')
+
 body
     margin: 0
+    max-width: 1920px
+    margin: 0 auto
+    background-color: #F2F1EF
 .main
     width: 100%
-    margin: 0 auto
-    padding: 100px 0px
+    margin: 0px auto 100px auto
     background-color: #F2F1EF
     box-sizing: border-box
     overflow: hidden
     -webkit-tap-highlight-color: rgba(0,0,0,0)
     -webkit-tap-highlight-color: trnsparent
+    scroll-behavior: smooth
     *
         padding: 0
         margin: 0
         font-family: "Univers LT W05_55 Roman"
 
 @import '_header'
+@import '_brands'
+@import '_welcome'
+@import '_text'
+@import '_map'
+@import '_label'
+@import '_box'
+@import '_person'
+@import '_gallery'
+@import '_together'
+@import '_brand'
+@import '_logo'
+@import '_video'

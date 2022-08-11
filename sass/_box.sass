@@ -1,0 +1,80 @@
+.box
+    &__img
+        position: relative
+        right: -6%
+        display: block
+        margin: 150px auto 100px auto
+        width: 60%
+    &__how
+        display: block
+        margin: 0 auto
+        margin-top: 50px
+        margin-bottom: 100px
+    &__answers
+        position: relative
+        left: 45px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 900px
+        margin: 0 auto
+    &__answer
+        position: relative
+        width: 30%
+        padding: 0px 50px
+    &__text
+        font-family: "Univers LT W05_55 Roman"
+        width: 60%
+        margin: 0 auto
+        text-align: center
+        text-transform: uppercase
+    &__number
+        position: absolute
+        left: -40%
+        top: 50%
+        transform: translateY(-50%)
+        width: 300px
+
+@media (max-width: 950px)
+    .box
+        &__answers
+            display: block
+            width: 700px
+            left: 0px
+        &__answer
+            width: 100%
+            margin-bottom: 70px
+            padding: 0px
+        &__text
+            width: 25%
+        &__number:last-child
+            left: 8%
+        &__number.box__number--two
+            left: 50%
+
+@media (max-width: 700px)
+    .box
+        &__answers
+            width: 550px
+
+        &__number:last-child
+            left: -1%
+        &__number.box__number--two
+            left: 42%
+        &__how
+            width: 240px
+        &__img
+            transform: scale(1.5)
+
+@media (max-width: 550px)
+    .box
+        &__answers
+            width: 320px
+        &__number
+            width: 250px
+        &__number:last-child
+            left: -25%
+        &__number.box__number--two
+            left: 48%
+        &__text
+            width: 50%

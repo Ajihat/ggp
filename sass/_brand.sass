@@ -1,0 +1,69 @@
+.brand
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 150px 0px
+    &__holder
+        position: relative
+        max-width: 900px
+    &__img
+        display: block
+        width: 100%
+    &__link
+        display: flex
+        justify-content: center
+        align-items: center
+        text-transform: uppercase
+        padding: 15px 40px
+        border: 1px solid black
+        color: #fff !important
+        background-color: black
+        text-decoration: none
+        font-size: 12px
+        margin-top: 20px
+        transition: .3s
+    &__link:hover
+        background-color: white
+        color: black !important
+    &__sticker
+        position: absolute
+        width: 250px
+    &__sticker.brand__sticker--adidas
+        bottom: 10%
+        right: -8%
+    &__sticker.brand__sticker--puma
+        bottom: 80%
+        left: -6%
+    &__sticker.brand__sticker--champion
+        bottom: 10%
+        left: -6%
+        width: 350px
+    &__sticker.brand__sticker--fila
+        bottom: 10%
+        right: -8%
+    &__sticker.brand__sticker--reebook
+        bottom: 15%
+        right: -8%
+        width: 280px
+    &__sticker.brand__sticker--vans
+        bottom: 15%
+        left: -8%
+        width: 280px
+    &__sticker.brand__sticker--converse
+        bottom: 15%
+        left: -8%
+        width: 280px
+
+@media (max-width: 980px)
+    .brand
+        &__sticker.brand__sticker--adidas, &__sticker.brand__sticker--puma, &__sticker.brand__sticker--champion, &__sticker.brand__sticker--fila, &__sticker.brand__sticker--reebook, &__sticker.brand__sticker--vans, &__sticker.brand__sticker--converse
+            top: initial
+            right: initial
+            left: initial
+            bottom: initial
+            left: 5%
+            top: -3%
+            width: 150px
+        &__sticker
+            width: 150px
