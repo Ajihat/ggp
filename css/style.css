@@ -417,7 +417,7 @@ body {
 }
 .map__event-date {
   height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .map__event-city {
   height: 20px;
@@ -494,7 +494,7 @@ body {
   }
 }
 .label {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
