@@ -464,20 +464,22 @@ body {
     width: 441px;
     height: 453px;
   }
-  .map__sticker {
-    display: none;
-  }
   .map__sticker.smolasty {
     display: block;
     top: -85px;
     right: -67px;
-    width: 220px;
+    width: 180px;
   }
   .map__sticker.kaluch {
     display: block;
     bottom: -35px;
-    right: -65px;
-    width: 160px;
+    right: -10%;
+    width: 140px;
+  }
+  .map__sticker.kinga {
+    bottom: -5px;
+    left: -40px;
+    width: 130px;
   }
   .map__date {
     width: 40px;
