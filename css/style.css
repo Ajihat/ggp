@@ -18,6 +18,7 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   background-color: #F2F1EF;
+  scroll-behavior: smooth;
 }
 
 .main {
@@ -462,6 +463,18 @@ body {
   .map__sticker {
     display: none;
   }
+  .map__sticker.smolasty {
+    display: block;
+    top: -85px;
+    right: -67px;
+    width: 220px;
+  }
+  .map__sticker.kaluch {
+    display: block;
+    bottom: -35px;
+    right: -65px;
+    width: 160px;
+  }
   .map__date {
     width: 40px;
   }
@@ -526,6 +539,7 @@ body {
   font-size: 12px;
   line-height: 14px;
   text-align: center;
+  color: black;
 }
 
 @-webkit-keyframes opacity {
@@ -550,7 +564,7 @@ body {
   right: -6%;
   display: block;
   margin: 150px auto 100px auto;
-  width: 60%;
+  width: 50%;
 }
 .box__how {
   display: block;
